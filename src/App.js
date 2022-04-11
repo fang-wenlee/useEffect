@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./styles.css";
 import Counter from "./Counter1.js";
-import User from "./user";
+//import User from "./user";
+import Login from "./test.effect.js";
 // import TodosList from "./TodosList";
 //import Counter from "./Counter";
 // import TodoList from "./TodoList";
@@ -15,7 +16,9 @@ export default function App() {
         {showCounter ? "Hide Counter " : "Show Counter"}
       </button>
       {showCounter && <Counter />}
-      <User />
+
+      <Login name="Dave" />
+      {/* <User /> */}
       {/* <TodosList /> */}
       {/* <TodoList />
       <button onClick={() => setShowCounter(!showCounter)}>
